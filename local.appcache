@@ -1,0 +1,19 @@
+CACHE MANIFEST 
+# 2022-05-09
+
+CACHE:
+js/app.js
+js/carService.js
+js/clientStorage.js
+js/swRegister.js
+js/template.js
+./
+index.html
+
+# Resources that require the user to be online.
+NETWORK:
+* 
+
+FALLBACK:
+# Offline site here
+# / /offline-site.html

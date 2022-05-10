@@ -1,0 +1,89 @@
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  header {
+    background-color: rgb(204, 60, 60);
+    color: white;
+    display: flex;
+    padding: 1rem;
+    height: 2rem;
+    align-items: center;
+  }
+  header > div {
+    flex: 1;
+  }
+  button {
+    font-size: 1rem;
+    padding: 0.5rem;
+    cursor: pointer;
+  }
+  .center {
+    text-align: center;
+    margin: 0.5rem auto;
+    display: block;
+  }
+  .card {
+    cursor: pointer;
+    background-size: cover;
+    position: relative;
+    border: 0;
+    height: 250px;
+    width: 100%;
+  }
+  .card-text {
+    color: #ffffff;
+    background-color: rgba(0, 0, 0, 1);
+    padding: 1rem;
+    position: absolute;
+    box-sizing: border-box;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+  }
+  .car-details-info > b {
+    padding-right: 0.5rem;
+  }
+  #car-page h4 {
+    padding: 1rem 0;
+    font-size: 1.5rem;
+    margin-bottom: 0;
+  }
+  #car-page h5 {
+    padding: 1rem 0;
+    font-size: 1.5rem;
+    margin-bottom: 0;
+  }
+  #car-page .car-details-info {
+    padding: 1rem;
+  }
+  .mdl-grid {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    flex-wrap: wrap;
+  }
+  .mdl-grid > .mdl-cell--12-col {
+    flex: 1;
+  }
+  .mdl-grid > .mdl-cell--2-col {
+    flex-basis: 16.6666666%;
+  }
+  .mdl-grid > .card {
+    flex-basis: 33.3333333%;
+  }
+  .mdl-grid > .mdl-cell--6-col {
+    flex-basis: 50%;
+  }
+  @media only screen and (max-width: 600px) {
+    .mdl-grid > .mdl-cell--2-col {
+      flex-basis: 100%;
+    }
+    .mdl-grid > .card {
+      flex-basis: 100%;
+    }
+    .mdl-grid > .mdl-cell--6-col {
+      flex-basis: 100%;
+    }
+  }
+  

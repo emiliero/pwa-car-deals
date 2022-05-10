@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="stylesheet" type="text/css" href="/style.css" />
+        <link rel="manifest" href="manifest.json" />
+        <link rel="apple-touch-icon" href="assets/apple-icon-180.png">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <script async src="https://cdn.jsdelivr.net/npm/pawcompat" crossorigin="anonymous"></script>
+        <script
+            defer
+            src="https://cdn.jsdelivr.net/gh/bstavroulakis/progressive-web-apps/resources/localforage.js"
+        ></script>
+        <script defer src="./js/app.js" type="module"></script>
+    </head>
+    <body>
+        <header>
+            <div>Car Deals</div>
+            <button onclick="location.reload()">Refresh</button>
+        </header>
+        <main>
+            <div id="connection-status" class="center"></div>
+            <div id="first-load" class="center">
+                <img width="300" height="300" src="logo.svg" alt="" />
+                <p>Parking your car deals.</p>
+            </div>
+            <div class="mdl-grid"><!-- Dynamic Data here --></div>
+            <button class="center" onclick="pageEvents.loadCars()">Show More</button>
+        </main>
+        <script id="car-card" type="text/template">
+            <div class="card" 
+                style="background-image: url('${image}')"
+                onclick="pageEvents.loadCarPage('${details_id}')">
+                <div class="card-text">${brand} ${model} ${year} ($${price})</div>
+            </div>
+        </script>
+    </body>
+</html>
